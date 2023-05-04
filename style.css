@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nombre{
+    background-color: blue;
+}
+.menunav{
+    background-color: brown;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.listanav{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 15px;
+    justify-content: center;
+    text-transform: uppercase ;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.imagen{
+    width: 300px;
+}
+.equipo{
+    background-color: azure;
+    height: 200px;
+}
+.fortydeb{
+    background-color: blueviolet;
+    height: 200px;
+}
+.quienessomos{
+    background-color: darkgreen;
+    height: 200px;
+}
