@@ -25,17 +25,45 @@ nav a{
     color: white;
 }
 .imagen{
-    width: 300px;
+    width: 200px;
 }
 .equipo{
     background-color: azure;
     height: 200px;
 }
-.fortydeb{
-    background-color: blueviolet;
-    height: 200px;
-}
+
 .quienessomos{
     background-color: darkgreen;
     height: 200px;
+}
+
+.fortydeb{
+border: solid black;
+display:block;
+background-color: blueviolet;
+
+}
+.fortalezas{
+
+border: solid black;
+width:fit-content;
+text-align: center;
+padding:20px;
+height:min-content;
+
+}
+.debilidades{
+border: solid black;
+text-align: center;
+width: fit-content;
+padding:20px;
+}
+
+.titulof, .titulod {
+margin-bottom:10px;
+}
+
+@media (min-width:768px) {
+    .fortydeb{ 
+    display:flex;}
 }
