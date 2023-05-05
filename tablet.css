@@ -1,3 +1,36 @@
 .fortydeb{ 
     display:flex;
 }
+
+
+/* SECCION QUIENES SOMOS */
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 65px;
+
+}
+.articulosec3{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.imagenesderecha{
+    order: 2;
+}
+.datosint{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.datosintpares{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
