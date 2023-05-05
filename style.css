@@ -93,11 +93,18 @@ margin-bottom:10px;
     width: 70%;
     gap: 20px;
 }
+.datosint, .datosintpares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .integrante{
     font-weight: bold;
 
 }
 .descripcionint{
+    display: flex;
+    align-items: center;
     width: 90%;
     color: rgb(77, 75, 75);
 }
