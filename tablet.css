@@ -1,3 +1,145 @@
+:root {
+    /*Variables colores*/
+    --colorprimario: black;
+    --colorsecundario: white;
+    --light-grey-blue: #b8b8b9;
+    --aqua: aqua;
+    --blue-green: #099d8d;
+    --black-8: #000000;
+    --gunmetal: #54585a;
+    --cool-grey: #b8b8b9;
+    /*Variables espaciado*/
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    /*Variables tipo de letra*/
+
+}
+
+.nombre {
+    background-color: blue;
+}
+
+.menunav {
+    background-color: brown;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.listanav {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 15px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.imagen {
+    width: 200px;
+}
+
+.equipo {
+    background-color: azure;
+    height: 200px;
+}
+
+.fortalezas {
+
+    border: solid black;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    height: min-content;
+
+}
+
+.debilidades {
+    border: solid black;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+}
+
+.titulof,
+.titulod {
+    margin-bottom: 10px;
+}
 .fortydeb{ 
     display:flex;
+}
+
+
+/*SECCIÓN 3: QUIENES SOMOS*/
+.quienessomos {
+    background-color: var(--colorsecundario);
+    padding-top: 30px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.tituloseccion3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.articulosec1 {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 10px;
+        width: 70%;
+        gap: 20px;
+    
+}
+
+.articulosec2 {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 10px;
+        width: 70%;
+        gap: 20px;
+}
+
+.integrante {
+    font-weight: bold;
+}
+
+.descripcionint {
+    width: 90%;
+    color: rgb(77, 75, 75);
+    
+}
+
+.retrato,
+.retrato1 {
+    width: 200px;
+    
+}
+
+.containerrrss {
+    display: flex;
+    justify-content: center;
+
+}
+
+.rrss {
+    width: 30px;
+}
+
+.rrss1 {
+    width: 15px;
 }
