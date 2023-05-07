@@ -1,3 +1,20 @@
+:root{
+    /*Variables colores*/
+    --colorprimario: black;
+    --colorsecundario: white;
+    --light-grey-blue: #b8b8b9;
+    --aqua: aqua;
+    --blue-green: #099d8d;
+    --black-8: #000000;
+    --gunmetal: #54585a;
+    --cool-grey: #b8b8b9;
+    /*Variables espaciado*/
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    /*Variables tipo de letra*/    
+
+}
 .nombre{
     background-color: blue;
 }
@@ -27,6 +44,7 @@ nav a{
     height: 200px;
 }
 
+<<<<<<< HEAD
 .quienessomos{
     background-color: darkgreen;
     height: 200px;
@@ -70,6 +88,8 @@ h3 {
     margin: 5px ;
 }
 
+=======
+>>>>>>> 7ad1ffc7280d1bc2d37efdcd8cca88e2c81f0e5e
 .fortydeb{
 border: solid black;
 display:block;
@@ -96,6 +116,7 @@ padding:20px;
 margin-bottom:10px;
 }
 
+<<<<<<< HEAD
 @media (min-width:768px) {
     .fortydeb{ 
     display:flex;}
@@ -137,4 +158,59 @@ margin-bottom:10px;
     width: 115px;
     height: 40px;
     margin: 10px auto;
+=======
+/*SECCIÓN 3: QUIENES SOMOS*/
+.quienessomos{
+    background-color: var(--colorsecundario);
+    padding-top: 30px ;
+    padding-bottom: 45px; ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.tituloseccion3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.articulosec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+}
+.datosint, .datosintpares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.integrante{
+    font-weight: bold;
+
+}
+.descripcionint{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: rgb(77, 75, 75);
+    text-align: center;
+}
+.retrato, .retrato1{
+    width: 200px;
+}
+.containerrrss{
+    display: flex;
+    justify-content: center;
+
+}
+.rrss{
+    width: 30px;
+}
+.rrss1{
+    width: 15px;
+>>>>>>> 7ad1ffc7280d1bc2d37efdcd8cca88e2c81f0e5e
 }
