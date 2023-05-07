@@ -102,10 +102,12 @@ nav a {
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    
 }
 .datosintpares{
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 20px;
+    text-align: start;
 }
