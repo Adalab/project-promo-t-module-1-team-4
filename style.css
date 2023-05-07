@@ -1,4 +1,5 @@
 :root{
+    font-size: 62.5%;
     /*Variables colores*/
     --colorprimario: black;
     --colorsecundario: white;
@@ -16,19 +17,34 @@
 
 }
 .nombre{
-    background-color: blue;
+    background-color: var(--blue-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: var(--colorsecundario);
+    /**Falta la fuente Rubik**/
+    text-transform: uppercase;
+
 }
 .menunav{
-    background-color: brown;
+    background-color: var(--aqua);
     height: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.875rem;
+    font-size: 0.938rem;
+    color: var(--colorsecundario);
+
 }
 .listanav{
     display: flex;
     list-style: none;
     gap: 10px;
-    font-size: 15px;
+    font-size: 0.938rem;
     justify-content: center;
     text-transform: uppercase ;
 }
@@ -37,19 +53,27 @@ nav a{
     color: white;
 }
 .imagen{
-    width: 200px;
-}
-.quienessomos{
-    background-color: darkgreen;
-    height: 200px;
+    width: 100%;
+
 }
  /*Sección equipo*/
-.equipo{
+ .equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.cuadrosuperior{
     background-color: coral;
     border: solid black;
     height: 30px;
     padding: 10px ;
     width: 230px;
+    position: absolute;
+    top: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .parrafo1 {
@@ -64,7 +88,7 @@ nav a{
     padding: 10px;
 }
 
-h3 {
+.tituloseccion1 {
     background-color: beige;
     width: min-content;
     margin: auto;
@@ -108,10 +132,73 @@ padding:20px;
 margin-bottom:10px;
 }
 
+/*SECCIÓN 3: QUIENES SOMOS*/
+.quienessomos{
+    background-color: var(--colorsecundario);
+    margin-top: 20px;
+    padding-top: 30px ;
+    padding-bottom: 45px; ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.tituloseccion3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue-green);
+}
+.articulosec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+}
+.datosint, .datosintpares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.integrante{
+    line-height: 2.813rem;
+    color: var(--colorprimario);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
 
-@media (min-width:768px) {
-    .fortydeb{ 
-    display:flex;}
+}
+.descripcionint{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    color: var(--gunmetal);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+.retrato, .retrato1{
+    width: 200px;
+}
+.containerrrss{
+    display: flex;
+    justify-content: center;
+
+}
+.rrss{
+    width: 30px;
+    color: var(--blue-green);
+}
+.rrss1{
+    width: 15px;
+    color: var(--blue-green);
 }
 
 /* Sección footer*/
@@ -123,7 +210,6 @@ margin-bottom:10px;
     align-items: center;
     width: 100%;
     height: 160px;
-    bottom: 0;
 }
 
 .footer1 {
@@ -152,58 +238,3 @@ margin-bottom:10px;
     height: 40px;
     margin: 10px auto;
 }
-/*SECCIÓN 3: QUIENES SOMOS*/
-.quienessomos{
-    background-color: var(--colorsecundario);
-    padding-top: 30px ;
-    padding-bottom: 45px; ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-.tituloseccion3{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-}
-.articulosec3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    gap: 20px;
-}
-.datosint, .datosintpares{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.integrante{
-    font-weight: bold;
-
-}
-.descripcionint{
-    display: flex;
-    align-items: center;
-    width: 90%;
-    color: rgb(77, 75, 75);
-    text-align: center;
-}
-.retrato, .retrato1{
-    width: 200px;
-}
-.containerrrss{
-    display: flex;
-    justify-content: center;
-
-}
-.rrss{
-    width: 30px;
-}
-.rrss1{
-    width: 15px;
-}
-
