@@ -15,36 +15,6 @@
     /*Variables tipo de letra*/
 
 }
-
-.nombre {
-    background-color: blue;
-}
-
-.menunav {
-    background-color: brown;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.listanav {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    font-size: 15px;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.imagen {
-    width: 200px;
-}
-
 .cuadrosuperior {
     background-color: azure;
     height: 200px;
