@@ -39,17 +39,11 @@ nav a{
 .imagen{
     width: 200px;
 }
-.equipo{
-    background-color: azure;
-    height: 200px;
-}
-
-<<<<<<< HEAD
 .quienessomos{
     background-color: darkgreen;
     height: 200px;
 }
-
+ /*Sección equipo*/
 .equipo{
     background-color: coral;
     border: solid black;
@@ -88,8 +82,6 @@ h3 {
     margin: 5px ;
 }
 
-=======
->>>>>>> 7ad1ffc7280d1bc2d37efdcd8cca88e2c81f0e5e
 .fortydeb{
 border: solid black;
 display:block;
@@ -116,12 +108,13 @@ padding:20px;
 margin-bottom:10px;
 }
 
-<<<<<<< HEAD
+
 @media (min-width:768px) {
     .fortydeb{ 
     display:flex;}
 }
 
+/* Sección footer*/
 .footer {
     display: flex;
     flex-direction: column;
@@ -153,12 +146,12 @@ margin-bottom:10px;
     margin: 20px auto;
 }
 
-.logo2 {
+.logo3 {
     background-color: cornflowerblue;
     width: 115px;
     height: 40px;
     margin: 10px auto;
-=======
+}
 /*SECCIÓN 3: QUIENES SOMOS*/
 .quienessomos{
     background-color: var(--colorsecundario);
@@ -212,5 +205,5 @@ margin-bottom:10px;
 }
 .rrss1{
     width: 15px;
->>>>>>> 7ad1ffc7280d1bc2d37efdcd8cca88e2c81f0e5e
 }
+
