@@ -1,3 +1,83 @@
+:root {
+    /*Variables colores*/
+    --colorprimario: black;
+    --colorsecundario: white;
+    --light-grey-blue: #b8b8b9;
+    --aqua: aqua;
+    --blue-green: #099d8d;
+    --black-8: #000000;
+    --gunmetal: #54585a;
+    --cool-grey: #b8b8b9;
+    /*Variables espaciado*/
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    /*Variables tipo de letra*/
+
+}
+.cuadrosuperior {
+    background-color: azure;
+    height: 200px;
+}
+
+.fortalezas {
+
+    border: solid black;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    height: min-content;
+
+}
+
+.debilidades {
+    border: solid black;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+}
+
+.titulof,
+.titulod {
+    margin-bottom: 10px;
+}
 .fortydeb{ 
     display:flex;
+}
+
+
+/* SECCION QUIENES SOMOS */
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 65px;
+
+}
+.articulosec3{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.imagenesderecha{
+    order: 2;
+}
+.datosint{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+}
+.datosintpares{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    text-align: start;
 }
