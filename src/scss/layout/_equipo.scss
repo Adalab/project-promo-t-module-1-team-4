@@ -1,0 +1,49 @@
+.equipo {
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.cuadrosuperior {
+    background-color: var(--colorsecundario);
+    border: solid black;
+
+    padding: 10px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parrafo1 {
+
+    text-align: center;
+}
+
+.box1 {
+    display: block;
+    background-color: var(--colorsecundario);
+    padding: 10px;
+
+}
+
+.tituloseccion1 {
+    width: min-content;
+    margin: auto;
+    color: var(--blue-green);
+    font-size: var(--titulosecciones);
+}
+
+
+.parrafo2 {
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: min-content;
+    padding: 20px;
+    margin: 5px;
+    font-size: var(--textosecciones);
+
+}
