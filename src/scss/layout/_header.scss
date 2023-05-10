@@ -1,0 +1,107 @@
+.header2 {
+  display: none;
+}
+
+.header1__nombre{
+  background-color: $blue-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: $subtitulos;
+  line-height: 3rem;
+  color: $colorsecundario;
+  /**Falta la fuente Rubik**/
+  text-transform: uppercase;
+
+}
+
+.header1__menunav {
+  background-color: $aqua;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.875rem;
+
+  color: $colorsecundario;
+  & --listanav{
+    display: flex;
+      list-style: none;
+      gap: 10px;
+      font-size: $textosecciones;
+      justify-content: center;
+      text-transform: uppercase;
+    
+      & a {
+        text-decoration: none;
+        color: white;
+      }
+
+  }
+
+}
+
+.header1__imagen {
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+.header2 {
+  display: none;
+}
+
+.header2__nombre {
+  background-color: $blue-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: $subtitulos;
+  line-height: 3rem;
+  color: $colorsecundario;
+  /**Falta la fuente Rubik**/
+  text-transform: uppercase;
+
+}
+
+.header2__menunav {
+  background-color: $aqua;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.875rem;
+
+  color: $colorsecundario;
+
+  & --listanav {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size:  $textosecciones;
+    justify-content: center;
+    text-transform: uppercase;
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+
+  }
+
+}
+
+
+
+.header2__imagen {
+  width: 100%;
+
+}
