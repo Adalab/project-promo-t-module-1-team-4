@@ -1,44 +1,44 @@
 .quienessomos {
-    background-color: var(--colorsecundario);
+    background-color: $colorsecundario;
     margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 45px;
-    ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
+
+    &__tituloseccion3{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: $titulosecciones;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $blue-green;
+        }
+
+    &__articulosec3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            gap: 20px;
+        }
 }
 
-.tituloseccion3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: var(--titulosecciones);
-    width: 80%;
+
+.datosint{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--blue-green);
-}
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
-.articulosec3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    gap: 20px;
-}
 
-.datosint,
-.datosintpares {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.integrante {
+.datosint__integrante {
     line-height: 2.813rem;
     color: var(--colorprimario);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -46,7 +46,7 @@
 
 }
 
-.descripcionint {
+.datosint__descripcionint{
     display: flex;
     align-items: center;
     width: 90%;
@@ -57,17 +57,37 @@
     font-size: var(--textosecciones);
 }
 
-.retrato,
-.retrato1 {
-    width: 200px;
-}
 
-.containerrrss {
+.datosint__containerrrss{
     display: flex;
     justify-content: center;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.datosintpares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.retrato,
+.retrato1 {
+    width: 200px;
+}
 .rrss {
     width: 30px;
     color: var(--blue-green);
