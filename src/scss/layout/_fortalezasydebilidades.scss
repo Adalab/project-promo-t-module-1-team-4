@@ -1,45 +1,50 @@
 .fortydeb {
     position: relative;
-    background-color: var(--cool-grey);
+    background-color: $cool-grey;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    &__fortalezas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        height: inherit;
+        width: fit-content;
+        text-align: center;
+        padding: 20px;
+        font-size: $textosecciones;
+        width: 40%;
+        &--titulof {
+            margin-bottom: 10px;
+            font-size: $titulosecciones;
+            color: $blue-green;
+    }
+    }
+    &__debilidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+        width: fit-content;
+        padding: 20px;
+        font-size: $textosecciones;
+        width: 40%;
+        
+        &--titulod {
+            margin-bottom: 10px;
+            font-size: $titulosecciones;
+            color: $blue-green;
+            }
+    }
 }
 
-.fortalezas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    height: inherit;
-    width: fit-content;
-    text-align: center;
-    padding: 20px;
-    font-size: var(--textosecciones);
-    width: 40%;
 
 
-}
 
-.debilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    text-align: center;
-    width: fit-content;
-    padding: 20px;
-    font-size: var(--textosecciones);
-    width: 40%;
-}
 
-.titulof,
-.titulod {
-    margin-bottom: 10px;
-    font-size: var(--titulosecciones);
-    color: var(--blue-green);
-}
+
