@@ -12,7 +12,7 @@
     &__tituloseccion3{
         text-transform: uppercase;
         font-weight: bold;
-        font-size: $titulosecciones;
+        font-size: 1.5rem;
         width: 80%;
         display: flex;
         align-items: center;
@@ -26,10 +26,14 @@
         align-items: center;
         width: 70%;
         gap: 20px;
+        align-items: center;
+        justify-content: center;
+        &--retrato{
+            display: flex;
+            width: 150px;
+        }
     }
 }
-
-
 .datosint{
     display: flex;
     flex-direction: column;
@@ -40,8 +44,7 @@
 
         line-height: 2.813rem;
         color: $colorprimario;
-        font-family: ;
-        font-size: $subtitulos
+        font-size: 1.5rem;
         
     }
 
@@ -54,47 +57,31 @@
         text-align: center;
         color: $gunmetal;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: $textosecciones;
+        font-size: 1rem;
     }
     &__containerrrss { 
         display: flex;
         justify-content: center;
+        gap: 10px;
     }
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.datosintpares {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.retrato,
-.retrato1 {
-    width: 200px;
-}
-.rrss {
-    width: 30px;
-    color: var(--blue-green);
-}
-
-.rrss1 {
-    width: 15px;
-    color: var(--blue-green);
+@media screen and (min-width: 768px){
+    .quienessomos__articulosec3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        &--retrato{
+            display: flex;
+            width: 150px;
+        }
+    }
+    .datosint{
+        align-items: start;
+        gap: 10px;
+    }
 }

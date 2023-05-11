@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  font-size: $subtitulos;
+  font-size: 1.5rem;
   line-height: 3rem;
   color: $colorsecundario;
   /**Falta la fuente Rubik**/
@@ -25,17 +25,15 @@
   line-height: 1.875rem;
   color: $colorsecundario;
   &--listanav{
-      display: flex;
-      list-style: none;
-      gap: 30px;
-      font-size: $textosecciones;
-      justify-content: center;
-      text-transform: uppercase;
-    
-      & a {
-        text-decoration: none;
-        color: white;
-      }
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
 
   }
 
@@ -46,7 +44,22 @@
 
 }
 
-@media screen and (min-widht: 720px){
+.header1__cuadrosuperior{
+  background-color: $colorsecundario;
+  border: solid black;
+  padding: 10px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: absolute;
+  &--parrafo1 {
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 767px){
   .header1 {
     display: none;
   }
@@ -91,11 +104,21 @@
     }
   
   }
-  
-  
-  
   .header2__imagen {
     width: 100%;
   
+  }
+  .header2__cuadrosuperior{
+    background-color: $colorsecundario;
+    border: solid black;
+    padding: 10px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    &--parrafo1 {
+      text-align: center;
+    }
   }
 }
