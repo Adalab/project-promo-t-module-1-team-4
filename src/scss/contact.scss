@@ -1,0 +1,50 @@
+.headerfooter__nombre {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: red ;
+    /**Falta la fuente Rubik**/
+    text-transform: uppercase;
+
+}
+
+.headerfooter__menunav {
+    background-color: aqua;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.875rem;
+    color: pink;
+
+    &--listanav {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        justify-content: space-between;
+        text-transform: uppercase;
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+
+}
+
+.headerfooter__imagen {
+    width: 100%;
+
+}
+
+
+@media screen and (min-width: 767px) {
+    .headerfooter {
+        display: none;
+    }
+    }
