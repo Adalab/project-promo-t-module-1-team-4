@@ -1,7 +1,6 @@
 .header2 {
   display: none;
 }
-
 .header1__nombre{
   background-color: $blue-green;
   display: flex;
@@ -13,9 +12,7 @@
   color: $colorsecundario;
   /**Falta la fuente Rubik**/
   text-transform: uppercase;
-
 }
-
 .header1__menunav {
   background-color: $aqua;
   height: 50px;
@@ -34,16 +31,12 @@
       text-decoration: none;
       color: white;
     }
-
   }
-
 }
-
 .header1__imagen {
   width: 100%;
 
 }
-
 .header1__cuadrosuperior{
   background-color: $colorsecundario;
   border: solid black;
@@ -58,52 +51,51 @@
     text-align: center;
 }
 }
-
 @media screen and (min-width: 767px){
   .header1 {
     display: none;
   }
-  
-  .header2__nombre {
+  .header2{
+    display: block;
+    
+    width: 100%;
+  }
+  .header2__sec1 {
     background-color: $blue-green;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     font-size: $subtitulos;
     line-height: 3rem;
     color: $colorsecundario;
+    padding: 0 30px;
     /**Falta la fuente Rubik**/
     text-transform: uppercase;
-  
+    font-size: 1rem;
   }
-  
-  .header2__menunav {
-    background-color: $aqua;
+  .header2__sec1--nombre{
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.875rem;
-  
+    font-size: 1rem;
     color: $colorsecundario;
-  
-    &--listanav {
-      display: flex;
-      list-style: none;
-      gap: 10px;
-      font-size:  $textosecciones;
-      justify-content: center;
-      text-transform: uppercase;
-  
-      & a {
-        text-decoration: none;
-        color: white;
-      }
-  
-    }
-  
   }
+  .header2__sec1--lista{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 1rem;
+    justify-content: center;
+    text-transform: uppercase;
+    & a {
+       text-decoration: none;
+      color: white;
+    }
+  }
+  
   .header2__imagen {
     width: 100%;
   

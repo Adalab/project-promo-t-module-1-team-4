@@ -1,17 +1,23 @@
+@import 'core/variables';
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .headerfooter__nombre {
-    background-color: green;
+    background-color: $blue-green;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 3rem;
-    color: red ;
+    color: white ;
     /**Falta la fuente Rubik**/
     text-transform: uppercase;
 
 }
-
 .headerfooter__menunav {
     background-color: aqua;
     height: 50px;
@@ -19,15 +25,16 @@
     align-items: center;
     justify-content: center;
     line-height: 1.875rem;
-    color: pink;
-
+    color: white;
     &--listanav {
+        font-size: 1rem;
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 30px;
         justify-content: space-between;
         text-transform: uppercase;
-
+        padding: 0;
         & a {
             text-decoration: none;
             color: white;
@@ -36,15 +43,97 @@
     }
 
 }
-
 .headerfooter__imagen {
     width: 100%;
 
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 20px;
+    &__cuadrotexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        &--titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: $blue-green;
+        }
+        &--párrafo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        &--span{
+            display: block;
+        }
+    }
+}
+.casillarespuesta{
+    width: 300px;
+    height: 30px;
 
-
+}
+.casillarespuestamensaje{
+    height: 150px;
+    width: 300px;
+}
+.comentario{
+    font-size: 0.7rem;
+    margin-top: 0;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorsecundario;
+    border-top: 0.3px solid $cool-grey;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    &__grupo{
+        font-size: 0.8rem;
+        color: $cool-grey;
+    }
+    &__navfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        font-size: 1rem;
+        &--lista { 
+            list-style: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 0;
+        }
+    }
+}
+.footer__logo3 {
+    width: 115px;
+    height: 40px;
+    margin: 10px auto;
+}
 @media screen and (min-width: 767px) {
     .headerfooter {
         display: none;
     }
-    }
+
+}
