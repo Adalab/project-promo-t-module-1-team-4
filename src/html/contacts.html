@@ -9,23 +9,49 @@
   </head>
   <body>
     <header class="headerfooter">
-      <section class="headerfooter__nombre">
-        <h2>Nombre del equipo</h2>
+      <div class="header1">
+        <section class="header1__nombre">
+          <h2>brujas de la programación</h2>
+        </section>
+        <section class="header1__menunav">
+          <nav>
+            <ul class="header1__menunav--listanav">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#quienessomos">Quienes somos</a></li>
+              <li><a href="../contacts.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="header1__imagen"
+          src="./assets/images/telefono1.jpeg"
+          alt="portatil"
+        />
+        <section class="header1__cuadrosuperior">
+          <p class="equipo__cuadrosuperior--parrafo1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </section>
-      <section class="headerfooter__menunav">
-        <nav>
-          <ul class="headerfooter__menunav--listanav">
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="#quienessomos">Quienes somos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-      <img
-        class="headerfooter__imagen"
-        src="./assets/images/telefono1.jpeg"
-        alt="chica estresada ordenador"
-      />
+      </div>
+      <div class="header2">
+        <section class="header2__sec1">
+          <h2 class="header2__sec1--nombre">brujas de la programación</h2>
+          <nav>
+            <ul class="header2__sec1--lista">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#quienessomos">Quienes somos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="header2__imagen"
+          src="./assets/images/telefono1.jpeg"
+          alt="portatil"
+        />
+        <section class="header2__cuadrosuperior">
+          <p class="equipo__cuadrosuperior--parrafo1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+      </div>
+      
     </header>
     <main class="main">
       <section class="main__cuadrotexto">
@@ -84,19 +110,22 @@
       </form>
     </main>
     <footer class="footer">
-      <p class="footer__grupo">Nombre del grupo © 2018</p>
+      <section class="footer__copy">
+        <p class="footer__grupo">Nombre del grupo © 2018</p>
+      </section>
+      <section class="footer__section2">
       <nav class="footer__navfooter">
-        <ul class="footer__navfooter--lista">
-          <li><a href="">equipo</a></li>
-          <li><a href="">quienes somos</a></li>
-          <li><a href="">contacto</a></li>
+        <ul class="footer__navfooter--list">
+          <li><a class="footer__link" href="#equipo">EQUIPO</a></li>
+          <li><a class="footer__link" href="#quienessomos">QUIÉNES SOMOS</a></li>
+          <li><a class="footer__link" href="./contacts.html">CONTACTO</a></li>
         </ul>
       </nav>
-      <img
-        class="footer__logo3"
-        src="./assets/images/logo-adalab.png"
-        alt="Logo Adalab"
-      />
+      </section>
+      <section class="footer__logo">
+        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      </section>
     </footer>
+    
   </body>
 </html>

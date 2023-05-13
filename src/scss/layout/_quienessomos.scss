@@ -70,7 +70,7 @@
     .quienessomos__articulosec3{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         width: 80%;
         gap: 20px;
         align-items: center;
@@ -78,6 +78,9 @@
         &--retrato{
             display: flex;
             width: 150px;
+        }
+        &--right{
+            flex-direction: row-reverse;
         }
     }
     .datosint{

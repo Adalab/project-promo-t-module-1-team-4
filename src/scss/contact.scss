@@ -1,11 +1,8 @@
 @import 'core/variables';
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.headerfooter__nombre {
+.header2 {
+    display: none;
+  }
+  .header1__nombre{
     background-color: $blue-green;
     display: flex;
     justify-content: center;
@@ -13,40 +10,48 @@
     height: 50px;
     font-size: 1rem;
     line-height: 3rem;
-    color: white ;
+    color: $colorsecundario;
     /**Falta la fuente Rubik**/
     text-transform: uppercase;
-
-}
-.headerfooter__menunav {
-    background-color: aqua;
+  }
+  .header1__menunav {
+    background-color: $aqua;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    line-height: 1.875rem;
-    color: white;
-    &--listanav {
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        list-style: none;
-        gap: 30px;
-        justify-content: space-between;
-        text-transform: uppercase;
-        padding: 0;
-        & a {
-            text-decoration: none;
-            color: white;
-        }
-
+    justify-content: space-between;
+    color: $colorsecundario;
+    font-size: 1rem;
+    &--listanav{
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      text-transform: uppercase;
+      padding: 0 5px;
+      & a {
+        text-decoration: none;
+        color: white;
+      }
     }
-
-}
-.headerfooter__imagen {
+  }
+  .header1__imagen {
     width: 100%;
-
-}
+  
+  }
+  .header1__cuadrosuperior{
+    background-color: $colorsecundario;
+    border: solid black;
+    padding: 10px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: absolute;
+    &--parrafo1 {
+      text-align: center;
+  }
+  }
 .main{
     display: flex;
     flex-direction: column;
@@ -83,13 +88,13 @@
     }
 }
 .casillarespuesta{
-    width: 300px;
+    width: 200px;
     height: 30px;
 
 }
 .casillarespuestamensaje{
     height: 150px;
-    width: 300px;
+    width: 250px;
 }
 .comentario{
     font-size: 0.7rem;
@@ -102,10 +107,10 @@
     background-color: $colorsecundario;
     border-top: 0.3px solid $cool-grey;
     align-items: center;
-    width: 100%;
     height: fit-content;
-    gap: 10px;
-    &__grupo{
+    gap: 30px;
+    padding: 50px 0;
+    &__copy{
         font-size: 0.8rem;
         color: $cool-grey;
     }
@@ -116,7 +121,7 @@
         align-items: center;
         color: gray;
         font-size: 1rem;
-        &--lista { 
+        &--list{ 
             list-style: none;
             text-align: center;
             text-transform: uppercase;
@@ -125,15 +130,42 @@
             padding: 0;
         }
     }
-}
-.footer__logo3 {
+    &__link{
+      text-decoration: none;
+      color: $gunmetal;
+    }
+    &__logo{
+      &--img{
+        width: 100px;
+      }
+    }
+  }
+  .footer__logo3 {
     width: 115px;
     height: 40px;
     margin: 10px auto;
-}
+  }
 @media screen and (min-width: 767px) {
     .headerfooter {
         display: none;
     }
-
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        padding-bottom: 50px;
+        column-gap: 0;
+        row-gap: 0;
+        &__navfooter{
+          grid-row: 1/3;
+          gap: 20px;
+          &--list{
+            font-size: 1rem;
+            text-align: end;
+          }
+        }
+      }
 }

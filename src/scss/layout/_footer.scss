@@ -5,10 +5,10 @@
   background-color: $colorsecundario;
   border-top: 0.3px solid $cool-grey;
   align-items: center;
-  width: 100%;
   height: fit-content;
-  gap: 10px;
-  &__grupo{
+  gap: 30px;
+  padding: 50px 0;
+  &__copy{
       font-size: 0.8rem;
       color: $cool-grey;
   }
@@ -19,7 +19,7 @@
       align-items: center;
       color: gray;
       font-size: 1rem;
-      &--lista { 
+      &--list{ 
           list-style: none;
           text-align: center;
           text-transform: uppercase;
@@ -27,6 +27,15 @@
           text-decoration: none;
           padding: 0;
       }
+  }
+  &__link{
+    text-decoration: none;
+    color: $gunmetal;
+  }
+  &__logo{
+    &--img{
+      width: 100px;
+    }
   }
 }
 .footer__logo3 {
@@ -37,44 +46,22 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: $colorsecundario;
-    border-top: solid 0.5px $cool-grey;
-    width: 100%;
-  }
-  .footer__section1{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
-    border: 1px solid black;
-  }
-  .footer__section2 {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
-  }
-  .footer__navfooter {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    flex-direction: column;
-    color: gray;
-    font-size: $textosecciones;
-    &--lista {
-      list-style: none;
-      text-decoration: none;
-      text-align: center;
-      color: $gunmetal;
-      font-size: $textosecciones;
+    align-items: center;
+    padding: 15px 30px;
+    padding-bottom: 50px;
+    column-gap: 0;
+    row-gap: 0;
+    &__navfooter{
+      grid-row: 1/3;
+      gap: 20px;
+      &--list{
+        font-size: 1rem;
+        text-align: end;
+      }
     }
   }
-  .footer__logo3 {
-    width: 115px;
-    height: 40px;
-    margin: 10px auto;
-  }
-  
 }
