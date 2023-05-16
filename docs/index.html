@@ -2,67 +2,204 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brujas de la programación</title>
+    <script src="https://kit.fontawesome.com/5168f8ef34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1200px)">
+</head>
+<body>
+    <header>
+      <div class="header1">
+        <section class="header1__nombre">
+          <h2>brujas de la programación</h2>
+        </section>
+        <section class="header1__menunav">
+          <nav>
+            <ul class="header1__menunav--listanav">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#quienessomos">Quienes somos</a></li>
+              <li><a href="./contacts.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="header1__imagen"
+          src="./assets/images/ordenador2.jpeg"
+          alt="portatil"
+        />
+        <section class="header1__cuadrosuperior">
+          <p class="equipo__cuadrosuperior--parrafo1">No chocamos dos veces con el mismo catacroker.</p>
+      </section>
+      </div>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+      <div class="header2">
+        <section class="header2__sec1">
+          <h2 class="header2__sec1--nombre">brujas de la programación</h2>
+          <nav>
+            <ul class="header2__sec1--lista">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#quienessomos">Quienes somos</a></li>
+              <li><a href="./contacts.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="header2__imagen"
+          src="./assets/images/ordenador2.jpeg"
+          alt="portatil"
+        />
+        <section class="header2__cuadrosuperior">
+          <p class="equipo__cuadrosuperior--parrafo1">No chocamos dos veces con el mismo catacroker.</p>
+        </section>
+      </div>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    </header>
+    <main>
+      <section class="equipo" id="equipo">
+          <section class="equipo__box1">
+                  <h3 class="equipo__box1--tituloseccion1">EQUIPO</h3>
+                  <p class="equipo__box1--parrafo">
+                      Bienvenidos a nuestra página web. Somos un grupito de 5 chicas con muchas ganas de emprender en el mundo de la programación. Aquí podréis encontrar información sobre cada una de nosotras en la sección llamada "Quienes Somos". En nuestro menú de "Contacto" ponemos a vuestra disposición un pequeño formulario mediante el cual podéis contactarnos fácilmente en cualquier momento.
+                      Además, en cada una de nuestras tarjetas contamos con enlaces a nuestras redes sociales en las que podéis conocernos un poquito más.
+                  </p>
+          </section>
+      </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
 
-          </li>
-        </ul>
-      </main>
+      <section class="fortydeb" >
+          <section class="fortydeb__fortalezas">
+              <h3 class="fortydeb__fortalezas--titulof">Fortalezas</h3>
+              <p class="fortydeb__fortalezas--parrafo">Somos un grupo muy unido en el que la ayuda, la comunicación y los ánimos nunca faltan. Contamos con experiencia a la hora de trabajar en equipo y no supone ningún problema para ninguna de nosotras.</p>
+          </section>
+          <section class="fortydeb__debilidades">
+              <h3 class="fortydeb__debilidades--titulod">Debilidades</h3>
+              <p class="fortydeb__debilidades--parrafo">Nos pueden tanto las ansias de programar que a menudo nos olvidamos de lo que es descansar. La ansiedad y el estrés en ocasiones se han apoderado de nosotras.</p>
+          </section>
+      </section>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
 
-        </small>
-      </footer>
+      <section class="quienessomos" id="quienessomos">
+          <h3 class="quienessomos__tituloseccion3">Quiénes somos</h3>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+          <article class="quienessomos__articulosec3">
+              <div class="fotoizq">
+                  <img class="quienessomos__articulosec3--retrato" src="./assets/images/Andrea.JPG" alt=""/>
+              </div>
+              <section class="datosint datosizq">
+                  <div class="datosint__integrante">
+                      <p>Andrea Ferreiro</p>
+                  </div>
+                  <div class="datosint__descripcionint">
+                      <p>descripcion integrante descripcion integrantedescripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante </p>
+                  </div>
+                  <div class="datosint__containerrrss">
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-solid fa-envelope" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-linkedin" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-instagram" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-twitter" style="color: #099d8d"></i></a>
+                  </div>
+              </section>
+          </article>
+          <article class="quienessomos__articulosec3">
+              <div class="fotoder">
+                  <img class="quienessomos__articulosec3--retrato" src="./assets/images/Marta.png" alt=""/>
+              </div>
+              <section class="datosint datosder">
+                  <div class="datosint__integrante">
+                      <p>Marta Belmonte</p>
+                  </div>
+                  <div class="datosint__descripcionint">
+                      <p> descripcion integrantedescripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrantedescripcion integrante </p>
+                  </div>
+                  <div class="datosint__containerrrss">
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-solid fa-envelope" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-linkedin" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-instagram" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-twitter" style="color: #099d8d"></i></a>
+                  </div>
+              </section>
+          </article>
+          <article class="quienessomos__articulosec3">
+              <div class="fotoizq">
+                  <img class="quienessomos__articulosec3--retrato" src="./assets/images/jeni2.jpg" alt=""/>
+              </div>
+              <section class="datosint datosizq">
+                  <div class="datosint__integrante">
+                      <p>Jenifer Jaldo</p>
+                  </div>
+                  <div class="datosint__descripcionint">
+                      <p> descripcion integrantedescripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrantedescripcion integrante </p>
+                  </div>
+                  <div class="datosint__containerrrss">
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-solid fa-envelope" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-linkedin" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-instagram" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-twitter" style="color: #099d8d"></i></a>
+                  </div>
+              </section>
+          </article>
+          <article class="quienessomos__articulosec3">
+              <div class="fotoder">
+                  <img class="quienessomos__articulosec3--retrato" src="./assets/images/giselle2.jpeg" alt=""/>
+              </div>
+              <section class="datosint datosder">
+                  <div class="datosint__integrante">
+                      <p>Giselle Castro</p>
+                  </div>
+                  <div class="datosint__descripcionint">
+                      <p> descripcion integrantedescripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrantedescripcion integrante </p>
+                  </div>
+                  <div class="datosint__containerrrss">
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-solid fa-envelope" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-linkedin" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-instagram" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-twitter" style="color: #099d8d"></i></a>
+                  </div>
+              </section>
+          </article>
+          <article class="quienessomos__articulosec3">
+              <div class="fotoizq">
+                  <img class="quienessomos__articulosec3--retrato" src="./assets/images/cris.jpeg" alt=""/>
+              </div>
+              <section class="datosint datosizq">
+                  <div class="datosint__integrante">
+                      <p>Cristina Viñal</p>
+                  </div>
+                  <div class="datosint__descripcionint">
+                      <p> descripcion integrantedescripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrante descripcion integrantedescripcion integrante </p>
+                  </div>
+                  <div class="datosint__containerrrss">
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-solid fa-envelope" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-linkedin" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-instagram" style="color: #099d8d;"></i></a>
+                      <a class="datosint__containerrrss--rrss" href=""><i class="fa-brands fa-twitter" style="color: #099d8d"></i></a>
+                  </div>
+              </section>
+          </article>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <section class="footer__copy">
+        <p class="footer__grupo">Nombre del grupo © 2018</p>
+      </section>
+      <section class="footer__section2">
+        <nav class="footer__navfooter">
+          <ul class="footer__navfooter--list">
+            <li><a class="footer__link" href="#equipo">EQUIPO</a></li>
+            <li><a class="footer__link" href="#quienessomos">QUIÉNES SOMOS</a></li>
+            <li><a class="footer__link" href="./contacts.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__logo">
+        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      </section>
+    </footer>
+
+  
+</body>
 </html>

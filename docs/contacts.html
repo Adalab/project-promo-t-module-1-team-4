@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+    <header class="contactheader">
+      <div class="contactheader1">
+        <section class="contactheader1__nombre">
+          <h2 class="contactheader1__nombre--text">brujas de la programación</h2>
+        </section>
+        <section class="contactheader1__menunav">
+          <nav>
+            <ul class="contactheader1__menunav--listanav">
+              <li><a href="./index.html">Equipo</a></li>
+              <li><a href="./index.html">Quienes somos</a></li>
+              <li><a href="../contacts.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="contactheader1__img"
+          src="./assets/images/telefono1.jpeg"
+          alt="portatil"
+        />
+      </div>
+      <div class="contactheader2">
+        <section class="contactheader2__sec1">
+          <h2 class="contactheader2__sec1--nombre">brujas de la programación</h2>
+          <nav>
+            <ul class="contactheader2__sec1--lista">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#quienessomos">Quienes somos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+        <img
+          class="contactheader2__imagen"
+          src="./assets/images/telefono1.jpeg"
+          alt="portatil"
+        />
+    </header>
+    <main class="main">
+      <section class="main__cuadrotexto">
+        <h3 class="main__cuadrotexto--titulo">Contacto</h3>
+        <p class="main__cuadrotexto--párrafo">
+          Puede contactar con nosotras fácilmente a través de este pequeño formulario. Intentaremos responderte cuanto antes. Muchas gracias por tu interés!!
+        </p>
+        <p class="main__cuadrotexto--comentario">Todos los campos marcados con <strong>*</strong> son obligatorios</p>
+      </section>
+      <form class="main__form" action="">
+        <label class="main__form--label" for="name">
+          <span class="main__form--span">Nombre completo</span>
+          <input
+            class="casillarespuesta"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre..."
+            required
+          />
+        </label>
+        <label class="main__form--label" for="email">
+          <span class="main__form--span">Email</span>
+          <input
+            class="casillarespuestaemail"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nombre.apellidos@mail.com"
+            required
+          />
+        </label>
+        <label class="main__form--label" for="phone" class="main__form--tlf">
+          <span class="main__form--span">Teléfono</span>
+          <input
+            class="casillarespuestatlf"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ej: 123456789"
+          />
+        </label>
+        <label class="main__form--label" for="message">
+          <span class="main__form--span">Mensaje</span>
+          <input
+            class="casillarespuestamensaje"
+            type="text"
+            id="message"
+            name="message"
+            placeholder="¿Qué necesitas?"
+            required
+          />
+        </label>
+        <input class="main__form--submit" type="submit" value="ENVIAR" />
+      </form>
+    </main>
+    <footer class="footer">
+      <section class="footer__copy">
+        <p class="footer__grupo">Brujas de la programación &copy;2023</p>
+      </section>
+      <section class="footer__section2">
+      <nav class="footer__navfooter">
+        <ul class="footer__navfooter--list">
+          <li><a class="footer__link" href="./index.html">EQUIPO</a></li>
+          <li><a class="footer__link" href="./index.html">QUIÉNES SOMOS</a></li>
+          <li><a class="footer__link" href="./contacts.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+      </section>
+      <section class="footer__logo">
+        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      </section>
+    </footer>
+  </body>
+</html>
