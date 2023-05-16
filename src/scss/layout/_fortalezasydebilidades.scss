@@ -15,7 +15,7 @@
         height: inherit;
         text-align: center;
         padding: 20px;
-        font-size: 1rem;
+        font-size: 15px;
         &--titulof {
             font-size: $titulosecciones;
             color: $blue-green;
@@ -29,7 +29,7 @@
         text-align: center;
         width: fit-content;
         padding: 20px;
-        font-size: 1rem;
+        font-size: 15px;
         
         &--titulod {
             margin-bottom: 10px;
@@ -56,7 +56,7 @@
             height: inherit;
             text-align: center;
             padding: 20px;
-            font-size: 1rem;
+            font-size: 15px;
             width: 40%;
             &--titulof {
                 font-size: $titulosecciones;
@@ -70,7 +70,7 @@
             gap: 1rem;
             text-align: center;
             padding: 20px;
-            font-size: 1rem;
+            font-size: 15px;
             width: 40%;
             &--titulod {
                 margin-bottom: 10px;
@@ -80,7 +80,26 @@
         }
     }
 }
-
+@media screen and (min-width: 1200px){
+    .fortydeb{
+        &__fortalezas{
+            &--titulof{
+                font-size: 35px;
+            }
+            &--parrafo{
+                font-size: 25px;
+            }
+        }
+        &__debilidades{
+            &--titulod{
+                font-size: 35px;
+            }
+            &--parrafo{
+                font-size: 25px;
+            }
+        }
+    }
+}
 
 
 

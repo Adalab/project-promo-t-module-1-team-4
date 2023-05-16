@@ -1,13 +1,16 @@
 .header2 {
   display: none;
 }
+.header1{
+  position: relative;
+}
 .header1__nombre{
   background-color: $blue-green;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 3rem;
   color: $colorsecundario;
   /**Falta la fuente Rubik**/
@@ -16,11 +19,12 @@
 .header1__menunav {
   background-color: $aqua;
   height: 50px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: $colorsecundario;
-  font-size: 1rem;
+  font-size: 15px;
   &--listanav{
     display: flex;
     list-style: none;
@@ -47,17 +51,17 @@
   align-items: center;
   border: 1px solid black;
   position: absolute;
+  transform: translateY(-20px);
   &--parrafo1 {
     text-align: center;
 }
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .header1 {
     display: none;
   }
   .header2{
     display: block;
-    
     width: 100%;
   }
   .header2__sec1 {
@@ -80,14 +84,14 @@
     align-items: center;
     justify-content: center;
     line-height: 1.875rem;
-    font-size: 1rem;
+    font-size: 15px;
     color: $colorsecundario;
   }
   .header2__sec1--lista{
     display: flex;
     list-style: none;
     gap: 10px;
-    font-size: 1rem;
+    font-size: 15px;
     justify-content: center;
     text-transform: uppercase;
     & a {
@@ -109,8 +113,23 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    font-size: 15px;
+    transform: translateY(-55px);
     &--parrafo1 {
       text-align: center;
     }
+  }
+}
+@media screen and (min-width: 1200px){
+  .header2__sec1--nombre{
+    font-size: 25px;
+  }
+  .header2__sec1--lista{
+    font-size: 20px;
+  }
+  .header2__cuadrosuperior{
+    font-size: 25px;
+    width: 300px;
+    transform: translateY(-75px);
   }
 }

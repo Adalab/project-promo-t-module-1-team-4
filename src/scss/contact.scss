@@ -88,16 +88,27 @@
           border: none;
           border-radius: 10px;
         }
+        &--label{
+          width: 100%;
+        }
       }
   }
   .casillarespuesta{
-      width: 80vw;
-      height: 30px;
+    width: 100%;
+    height: 30px;
   
   }
   .casillarespuestamensaje{
-      height: 150px;
-      width: 80vw;
+    height: 150px;
+    width: 100%;
+  }
+  .casillarespuestaemail{
+    width: 100%;
+    height: 30px;
+  }
+  .casillarespuestatlf{
+    width: 100%;
+    height: 30px;
   }
   .footer {
       display: flex;
@@ -194,6 +205,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
     &__cuadrotexto{
       width: 60vw;
       display: flex;
@@ -224,8 +236,8 @@
       width: 60vw;
       color: $gunmetal;
       margin-bottom: 50px;
+      font-size: 20px;
       &--span{
-        font-size: 14px;
         display: flex;
         flex-direction: column;
       }
@@ -238,6 +250,9 @@
         border: none;
         border-radius: 10px;
       }
+      &--label{
+        width: 100%;
+      }
     }
   }
   .casillarespuesta{
@@ -247,6 +262,14 @@
   .casillarespuestamensaje{
     height: 150px;
     width: 60vw;
+  }
+  .casillarespuestaemail{
+    width: 100%;
+    height: 30px;
+  }
+  .casillarespuestatlf{
+    width: 100%;
+    height: 30px;
   }
    .footer {
     display: grid;
@@ -289,60 +312,80 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .main{
-    &--titulo{
-      font-size: 27px;      
+  .contactheader2{
+    &__sec1{
+      &--nombre{
+        font-size: 30px;
+      }
+      &--lista{
+        font-size: 25px;
+        gap: 30px;
+      }
     }
-    &--párrafo{
-      font-size: 20x;
+  }
+  .main{
+    font-size: 32px;
+    &__cuadrotexto{
+      &--titulo{
+        font-size: 35px;      
+      }
+      &--párrafo{
+        font-size: 20x;
+      }
     }
     &__form{
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       align-items: flex-start;
-      gap: 20px;
+      gap: 40px;
       text-align: justify;
       width: 60vw;
       color: $gunmetal;
       margin-bottom: 50px;
+      font-size: 26px;
       &--span{
-        font-size: 14px;
         display: flex;
         flex-direction: column;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
       &--submit{
         background-color: #099d8d;
-        width: 200px;
+        width: 400px;
         text-align: center;
-        height: 45px;
+        height: 55px;
         color: white;
         border: none;
         border-radius: 10px;
+        font-size: 20px;
       }
-      &--email{
-        width: 50%;
-      }
-      &--tlf{
-        width: 40%;
+      &--label{
+        width: 80vw;
       }
     }
   }
   .casillarespuesta{
     width: 60vw;
-    height: 30px;
+    height: 50px;
+    font-size: 20px;
    }
   .casillarespuestamensaje{
     height: 150px;
     width: 60vw;
+    font-size: 20px;
   }
   .casillarespuestaemail{
-    width: 80%;
+    width: 35%;
+    font-size: 20px;
+    height: 50px;
   }
   .casillarespuestatlf{
-    width: 80%;
+    width: 30%;
+    font-size: 20px;
+    height: 50px;
   }
-   .footer {
+  .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -354,13 +397,15 @@
     margin: 10px 30px;
     &__copy{
       color: $gunmetal;
+      font-size: 24px;
     }
     &__section2{
       grid-row: -3/-1;
       grid-column: 2/3;
+      font-size: 24px;
     }
     &__navfooter{
-      gap: 20px;
+      font-size: 24px;
       &--list{
         grid-row: 1/3;
         font-size: 1rem;
@@ -368,12 +413,13 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-         gap: 20px;
-       }
+        gap: 20px;
+      }
     }
     &__link{
       text-decoration: none;
       color: $gunmetal;
+      font-size: 27px;
     }
     &__logo{
       &--img{

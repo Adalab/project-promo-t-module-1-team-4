@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
     &__box1 {
         display: block;
         background-color: $colorsecundario;
@@ -13,8 +12,7 @@
         margin: auto;
         color: $blue-green;
         font-size: 1.5rem;
-    }
-        
+    }   
     &--parrafo {
         text-align: center;
         align-items: center;
@@ -22,11 +20,22 @@
         height: min-content;
         padding: 20px;
         margin: 5px;
-        font-size: 1rem;
+        font-size: 15px;
     }
     }
 }
-
+@media screen and (min-width: 1200px){
+    .equipo{
+        &__box1{
+            &--tituloseccion1{
+                font-size: 35px;
+            }
+            &--parrafo{
+                font-size: 25px;
+            }
+        }
+    }
+}
 
 
 
